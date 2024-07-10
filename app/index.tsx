@@ -28,10 +28,7 @@ const styles = StyleSheet.create({
     borderRadius: 75,
     marginBottom: 20,
   },
-  aboutMe: {
-    textAlign: 'justify',
-    marginBottom: 20,
-    lineHeight: 1.8,
+  a
   },
   skillItem: {
     flexDirection: 'row',

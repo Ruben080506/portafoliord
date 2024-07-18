@@ -11,16 +11,12 @@ const styles = StyleSheet.create({
   },
   header: {
     width: '100%',
-    backgroundColor: '#33FFA3', // Header background color
-    justifyContent: 'center',
     alignItems: 'center',
     padding: 20,
   },
   headerTitle: {
     fontSize: 32, // Increased header title font size
     fontWeight: 'bold',
-    color: '#FFFFFF', // Header title color
-    textShadow: '1px 1px 2px rgba(0, 0, 0, 0.3)', // Optional text shadow for depth
   },
   profileImage: {
     width: 150,
@@ -69,15 +65,6 @@ const styles = StyleSheet.create({
   },
   contactInfo: {
     textAlign: 'center',
-    marginTop: 20,
-  },
-  contactLink: {
-    color: '#33FFA3',
-    textDecoration: 'underline',
-  },
-  icon: {
-    fontSize: 24,
-    marginRight: 10,
   },
 });
 

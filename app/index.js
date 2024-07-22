@@ -1,10 +1,10 @@
 import React from 'react';
-import { StyleSheet, ImageBackground, View, Image, Text, TouchableOpacity ,ScrollView } from 'react-native';
+import { StyleSheet, ImageBackground, View, Image, Text, TouchableOpacity, ScrollView } from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
 
 // Pantalla de inicio
-const HomeScreen: React.FC<any> = ({ navigation }) => {
+const HomeScreen = ({ navigation }) => {
   return (
     <View style={styles.container}>
       {/* Primer fondo (70% del ancho) */}
@@ -58,21 +58,21 @@ const HomeScreen: React.FC<any> = ({ navigation }) => {
 };
 
 // Pantalla de detalles
-const DetailsScreen: React.FC<any> = () => {
+const DetailsScreen = () => {
   
   const projects = [
     {
-      title: 'Proyecto 1',
+      title: 'Juego 1',
       description: 'Descripción del Proyecto 1',
       imageSource: require('./proyecto1.jpg'),
     },
     {
-      title: 'Proyecto 2',
+      title: 'Juego 2',
       description: 'Descripción del Proyecto 2',
       imageSource: require('./proyecto2.jpg'),
     },
     {
-      title: 'Proyecto 3',
+      title: 'Juego 3',
       description: 'Descripción del Proyecto 3',
       imageSource: require('./proyecto3.jpg'),
     },
@@ -97,7 +97,7 @@ const DetailsScreen: React.FC<any> = () => {
 };
 
 // Pantalla de ajustes
-const SettingsScreen: React.FC<any> = () => {
+const SettingsScreen = () => {
   return (
     <View style={styles.container}>
       {/* Contenido similar a HomeScreen */}
@@ -115,7 +115,7 @@ const SettingsScreen: React.FC<any> = () => {
 };
 
 // Pantalla de perfil
-const ProfileScreen: React.FC<any> = () => {
+const ProfileScreen = () => {
   return (
     <View style={styles.container}>
       {/* Contenido similar a HomeScreen */}
@@ -135,7 +135,7 @@ const ProfileScreen: React.FC<any> = () => {
 // Configuración del stack de navegación
 const Stack = createStackNavigator();
 
-const App: React.FC = () => {
+const App = () => {
   return (
     
       <Stack.Navigator>
